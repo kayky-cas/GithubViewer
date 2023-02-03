@@ -9,8 +9,8 @@ class ProfileTableViewCell: UITableViewCell {
 
 
     lazy var languageLabel: LanguageLabel = {
-        let uiLabel = LanguageLabel(withInsets: 4, 4, 10, 10)
-        uiLabel.font = .systemFont(ofSize: 14)
+        let uiLabel = LanguageLabel(withInsets: 3, 3, 9, 9)
+        uiLabel.font = .systemFont(ofSize: 13)
         uiLabel.textColor = .init(red: 15 / 255, green: 15 / 255, blue: 15 / 255, alpha: 1)
         uiLabel.layer.masksToBounds = true
         uiLabel.layer.cornerRadius = 10
@@ -47,14 +47,15 @@ class ProfileTableViewCell: UITableViewCell {
 
     func setupConstraints() {
         textLabel?.anchor(
-                top: topAnchor,
+//                top: topAnchor,
                 leading: leadingAnchor,
-                padding: .init(top: 20, left: 10, bottom: 0, right: 0)
+                bottom: centerYAnchor,
+                padding: .init(top: 0, left: 10, bottom: 2, right: 0)
         )
         languageLabel.anchor(
+                top: centerYAnchor,
                 leading: textLabel?.leadingAnchor,
-                bottom: safeAreaLayoutGuide.bottomAnchor,
-                padding: .init(top: 0, left: 0, bottom: 10, right: 0)
+                padding: .init(top: 0, left: 0, bottom: 0, right: 0)
         )
 
         repoImage.anchor(
