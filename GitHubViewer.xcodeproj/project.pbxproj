@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		B8AA6E5774FD682A36401B30 /* Pods_GitHubViewer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0152EA455B5DF68A66FB658F /* Pods_GitHubViewer.framework */; };
 		EEE480132E5C998CF047FD2E /* SearchViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEE480975DD8A345686D4BE8 /* SearchViewModel.swift */; };
+		EEE4803E3E41C04E3A609BFD /* UIImageView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEE480404753D4897D5D2A23 /* UIImageView+Extension.swift */; };
 		EEE480D7E525BEFC324CFC0A /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEE48DAFFC7CE86C8148943B /* BaseViewController.swift */; };
 		EEE48297FD39B6DDA5B22FA4 /* CircleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEE48A884025BD70129AAFD8 /* CircleView.swift */; };
 		EEE48319D71B8F7D37B9FA1F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EEE48FA93A29F82B6E763235 /* LaunchScreen.storyboard */; };
@@ -31,6 +32,7 @@
 		0152EA455B5DF68A66FB658F /* Pods_GitHubViewer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GitHubViewer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AE1E833F34D52384E9A27C49 /* Pods-GitHubViewer.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GitHubViewer.debug.xcconfig"; path = "Target Support Files/Pods-GitHubViewer/Pods-GitHubViewer.debug.xcconfig"; sourceTree = "<group>"; };
 		BB332E55F62557588CA2E66C /* Pods-GitHubViewer.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GitHubViewer.release.xcconfig"; path = "Target Support Files/Pods-GitHubViewer/Pods-GitHubViewer.release.xcconfig"; sourceTree = "<group>"; };
+		EEE480404753D4897D5D2A23 /* UIImageView+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImageView+Extension.swift"; sourceTree = "<group>"; };
 		EEE480975DD8A345686D4BE8 /* SearchViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchViewModel.swift; sourceTree = "<group>"; };
 		EEE480A595980D5D73C772AD /* GithubApi.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GithubApi.swift; sourceTree = "<group>"; };
 		EEE4842F5A3A3973CF23F70B /* BaseTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseTextField.swift; sourceTree = "<group>"; };
@@ -217,6 +219,7 @@
 			isa = PBXGroup;
 			children = (
 				EEE486C519E94821B19BF596 /* UIView+Extension.swift */,
+				EEE480404753D4897D5D2A23 /* UIImageView+Extension.swift */,
 			);
 			path = Util;
 			sourceTree = "<group>";
@@ -344,6 +347,7 @@
 				EEE4846E24B4F9A212A9ED22 /* ProfileScreenView.swift in Sources */,
 				EEE48A056C8BCEC4093BF8AE /* GithubApi.swift in Sources */,
 				EEE480132E5C998CF047FD2E /* SearchViewModel.swift in Sources */,
+				EEE4803E3E41C04E3A609BFD /* UIImageView+Extension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -9,10 +9,21 @@ class SearchViewModel {
 
     func searchUser(username: String, navigationController: UINavigationController?) {
         githubApi.getUser(username: username) { user in
-            if let user = user {
-//                let profileViewController = ProfileViewController()
-//                profileViewController.setData(user: user, repositories: [])
-////                navigationController?.pushViewController(profileViewController, animated: true)
+            guard let user = user else {
+                return
+            }
+
+            print(user)
+
+            self.githubApi.getRepos(username: username) { repositories in
+                guard let repositories = repositories else {
+                    return
+                }
+
+                let profileViewController = ProfileViewController()
+                profileViewController.setData(user: user, repositories: repositories)
+
+                navigationController?.pushViewController(profileViewController, animated: true)
             }
         }
     }

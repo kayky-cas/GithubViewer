@@ -26,5 +26,7 @@ class SearchViewController: BaseViewController {
 
     @objc func searchUser() {
         searchViewModel.searchUser(username: searchScreenView.usernameTextField.text!, navigationController: navigationController)
+        searchScreenView.searchButton.isEnabled = false
+        searchScreenView.usernameTextField.text = ""
     }
 }
