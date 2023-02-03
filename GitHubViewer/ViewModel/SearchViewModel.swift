@@ -16,6 +16,8 @@ class SearchViewModel {
             print(user)
 
             self.githubApi.getRepos(username: username) { repositories in
+                print(repositories)
+
                 guard let repositories = repositories else {
                     return
                 }

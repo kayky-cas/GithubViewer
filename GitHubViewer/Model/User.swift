@@ -8,6 +8,7 @@ struct User: Decodable {
     let id: Int
     let login: String
     let name: String
-    let location: String
+    let followers: Int
+    let following: Int
     let avatarUrl: String?
 }

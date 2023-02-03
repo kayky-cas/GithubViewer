@@ -20,7 +20,8 @@ class ProfileScreenView: BaseScreenView {
 
             userLabel.text = "@" + user.login
 
-            locationLabel.text = user.location
+            followersLabel.text = "Followers: \(user.followers)"
+            followingLabel.text = "Following \(user.following)"
         }
     }
 
@@ -65,14 +66,50 @@ class ProfileScreenView: BaseScreenView {
         return uiLabel
     }()
 
-    lazy var locationLabel: UILabel = {
+    lazy var followersLabel: UILabel = {
         let uiLabel = UILabel()
 
-        uiLabel.font = .systemFont(ofSize: 12)
+        uiLabel.font = .systemFont(ofSize: 15)
         uiLabel.textColor = .gray
 
         return uiLabel
     }()
+
+    lazy var followingLabel: UILabel = {
+        let uiLabel = UILabel()
+
+        uiLabel.font = .systemFont(ofSize: 15)
+        uiLabel.textColor = .gray
+
+        return uiLabel
+    }()
+
+    var reposTableView: UITableView = {
+        let uiTableView = UITableView()
+
+        uiTableView.backgroundColor = .init(red: 0, green: 0, blue: 0, alpha: 0.5)
+        uiTableView.layer.masksToBounds = true
+        uiTableView.layer.cornerRadius = 20
+//        uiTableView.layer.borderColor = UIColor.white.cgColor
+//        uiTableView.layer.borderWidth = 3
+
+        return uiTableView
+    }()
+
+    lazy var container = {
+        let view = UIVisualEffectView(effect: nil)
+        view.translatesAutoresizingMaskIntoConstraints = false
+        view.effect = UIBlurEffect(style: .systemThinMaterialDark)
+        view.backgroundColor = .clear
+
+        view.layer.masksToBounds = true
+        view.layer.cornerRadius = 20
+//        view.layer.borderColor = UIColor.white.cgColor
+//        view.layer.borderWidth = 3
+
+        return view
+    }()
+
 
     override func setup() {
         addSubviews(
@@ -81,7 +118,10 @@ class ProfileScreenView: BaseScreenView {
                 nameLabel,
                 avatarImage,
                 userLabel,
-                locationLabel
+                followersLabel,
+                followingLabel,
+                container,
+                reposTableView
         )
     }
 
@@ -124,10 +164,31 @@ class ProfileScreenView: BaseScreenView {
                 trailing: centerXAnchor
         )
 
-        locationLabel.anchor(
+        followersLabel.anchor(
                 leading: nameLabel.leadingAnchor,
                 bottom: avatarImage.bottomAnchor,
                 trailing: centerXAnchor
+        )
+
+        followingLabel.anchor(
+                bottom: avatarImage.bottomAnchor,
+                trailing: nameLabel.trailingAnchor
+        )
+
+        reposTableView.anchor(
+                top: avatarImage.bottomAnchor,
+                leading: nameLabel.leadingAnchor,
+                bottom: safeAreaLayoutGuide.bottomAnchor,
+                trailing: avatarImage.trailingAnchor,
+                padding: .init(top: 20, left: 0, bottom: 0, right: 0)
+        )
+
+        container.anchor(
+                top: avatarImage.bottomAnchor,
+                leading: nameLabel.leadingAnchor,
+                bottom: safeAreaLayoutGuide.bottomAnchor,
+                trailing: avatarImage.trailingAnchor,
+                padding: .init(top: 20, left: 0, bottom: 0, right: 0)
         )
     }
 }

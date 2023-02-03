@@ -11,10 +11,12 @@
 		EEE480132E5C998CF047FD2E /* SearchViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEE480975DD8A345686D4BE8 /* SearchViewModel.swift */; };
 		EEE4803E3E41C04E3A609BFD /* UIImageView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEE480404753D4897D5D2A23 /* UIImageView+Extension.swift */; };
 		EEE480D7E525BEFC324CFC0A /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEE48DAFFC7CE86C8148943B /* BaseViewController.swift */; };
+		EEE481D4CED1CC438D6CABF1 /* LanguageLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEE48D2724A1B33EBFFF33B1 /* LanguageLabel.swift */; };
 		EEE48297FD39B6DDA5B22FA4 /* CircleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEE48A884025BD70129AAFD8 /* CircleView.swift */; };
 		EEE48319D71B8F7D37B9FA1F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EEE48FA93A29F82B6E763235 /* LaunchScreen.storyboard */; };
 		EEE4837BBCAFA5D090281CD7 /* Repository.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEE48DDFAD21EA98B4549224 /* Repository.swift */; };
 		EEE4846E24B4F9A212A9ED22 /* ProfileScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEE48F7A185CDEBD7ED89A34 /* ProfileScreenView.swift */; };
+		EEE484A71A6AEF35DE6C8219 /* ProfileTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEE484034F7D4F8608EF47CF /* ProfileTableViewCell.swift */; };
 		EEE4854A4DD4E6F303772F39 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EEE48AD8D78232229E4720FD /* Assets.xcassets */; };
 		EEE487FA9C7AE9609D2A5857 /* BaseTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEE4842F5A3A3973CF23F70B /* BaseTextField.swift */; };
 		EEE489DE2EEF72A17818F85B /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEE48AA04780D790A87176EB /* SearchViewController.swift */; };
@@ -25,6 +27,7 @@
 		EEE48B2C9ED5326849404E05 /* BaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEE48847681CBD10FE694714 /* BaseView.swift */; };
 		EEE48BE1F04D5ACC3D9A343D /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEE4886303172B48975338A3 /* User.swift */; };
 		EEE48D392E186FC39A913845 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEE48638F9F9B2CB61315C48 /* ProfileViewController.swift */; };
+		EEE48DA082AFCFDED5967ADB /* ProfileTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEE482C5D058B7B78BD0A709 /* ProfileTableView.swift */; };
 		EEE48E4AA1B5CA3F2521AC12 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEE48BFE2900310E9278DB57 /* AppDelegate.swift */; };
 /* End PBXBuildFile section */
 
@@ -35,6 +38,8 @@
 		EEE480404753D4897D5D2A23 /* UIImageView+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImageView+Extension.swift"; sourceTree = "<group>"; };
 		EEE480975DD8A345686D4BE8 /* SearchViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchViewModel.swift; sourceTree = "<group>"; };
 		EEE480A595980D5D73C772AD /* GithubApi.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GithubApi.swift; sourceTree = "<group>"; };
+		EEE482C5D058B7B78BD0A709 /* ProfileTableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileTableView.swift; sourceTree = "<group>"; };
+		EEE484034F7D4F8608EF47CF /* ProfileTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileTableViewCell.swift; sourceTree = "<group>"; };
 		EEE4842F5A3A3973CF23F70B /* BaseTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseTextField.swift; sourceTree = "<group>"; };
 		EEE48526B0E3C1374B9EAAC9 /* GitHubViewer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GitHubViewer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EEE48638F9F9B2CB61315C48 /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
@@ -48,6 +53,7 @@
 		EEE48AA04780D790A87176EB /* SearchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
 		EEE48AD8D78232229E4720FD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EEE48BFE2900310E9278DB57 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		EEE48D2724A1B33EBFFF33B1 /* LanguageLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LanguageLabel.swift; sourceTree = "<group>"; };
 		EEE48DAFFC7CE86C8148943B /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		EEE48DDFAD21EA98B4549224 /* Repository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Repository.swift; sourceTree = "<group>"; };
 		EEE48F7A185CDEBD7ED89A34 /* ProfileScreenView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileScreenView.swift; sourceTree = "<group>"; };
@@ -192,6 +198,9 @@
 			isa = PBXGroup;
 			children = (
 				EEE48F7A185CDEBD7ED89A34 /* ProfileScreenView.swift */,
+				EEE482C5D058B7B78BD0A709 /* ProfileTableView.swift */,
+				EEE484034F7D4F8608EF47CF /* ProfileTableViewCell.swift */,
+				EEE48D2724A1B33EBFFF33B1 /* LanguageLabel.swift */,
 			);
 			path = Profile;
 			sourceTree = "<group>";
@@ -348,6 +357,9 @@
 				EEE48A056C8BCEC4093BF8AE /* GithubApi.swift in Sources */,
 				EEE480132E5C998CF047FD2E /* SearchViewModel.swift in Sources */,
 				EEE4803E3E41C04E3A609BFD /* UIImageView+Extension.swift in Sources */,
+				EEE48DA082AFCFDED5967ADB /* ProfileTableView.swift in Sources */,
+				EEE484A71A6AEF35DE6C8219 /* ProfileTableViewCell.swift in Sources */,
+				EEE481D4CED1CC438D6CABF1 /* LanguageLabel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
