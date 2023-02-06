@@ -25,6 +25,7 @@ func getLanguageColor(language: String?) -> UIColor {
     case "CSS": return .cyan
     case "Python": return .systemGreen
     case "Dart": return .blue
+    case "PHP": return .purple
 
     default: return .white
     }
