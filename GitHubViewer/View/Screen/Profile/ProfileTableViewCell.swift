@@ -7,7 +7,6 @@ import UIKit
 class ProfileTableViewCell: UITableViewCell {
     static let cellId = "ProfileTableViewCell"
 
-
     lazy var languageLabel: LanguageLabel = {
         let uiLabel = LanguageLabel(withInsets: 3, 3, 9, 9)
         uiLabel.font = .systemFont(ofSize: 13)
@@ -37,7 +36,7 @@ class ProfileTableViewCell: UITableViewCell {
         if let language = repository.language {
 
             languageLabel.text = language
-            languageLabel.backgroundColor = getLanguageColor(language: language)
+            languageLabel.backgroundColor = repository.getLanguageColor()
             languageLabel.isHidden = false
         }
 
@@ -47,7 +46,6 @@ class ProfileTableViewCell: UITableViewCell {
 
     func setupConstraints() {
         textLabel?.anchor(
-//                top: topAnchor,
                 leading: leadingAnchor,
                 bottom: centerYAnchor,
                 padding: .init(top: 0, left: 10, bottom: 2, right: 0)
